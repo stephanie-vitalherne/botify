@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { Sidebar } from "../components";
+import { Sidebar, Center } from "../components";
 
 export default function Home() {
   return (
@@ -8,9 +8,9 @@ export default function Home() {
         <title>Botify2.0</title>
       </Head>
 
-      <main>
+      <main className="flex">
         <Sidebar />
-        {/* Center */}
+        <Center />
       </main>
 
       <div>{/* Player */}</div>
